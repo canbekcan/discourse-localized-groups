@@ -1,6 +1,6 @@
 # name: discourse-localized-groups
-# about: Multi-language localization support for Discourse Group display names
-# version: 1.0.0
+# about: Multi-language localization support for Discourse Group full names
+# version: 1.0.1
 # authors: Can Bekcan
 # url: https://github.com/canbekcan/discourse-localized-groups
 
@@ -13,24 +13,24 @@ after_initialize do
 
   reloadable_patch do
     # ====================================================================
-    # 1. MODEL YAMASI: Backend işlemleri, E-postalar ve Flair unvanları için
+    # 1. MODEL YAMASI: Backend işlemleri ve E-postalar için (full_name)
     # ====================================================================
     module ::LocalizedGroupModelPatch
-      def display_name
-        raw_display_name = read_attribute(:display_name)
+      def full_name
+        raw_full_name = read_attribute(:full_name)
         
-        # Kontrol 1: Veritabanındaki display_name doğrudan 'groups.' çeviri anahtarı içeriyorsa
-        if raw_display_name.to_s.start_with?('groups.')
-          return I18n.t(raw_display_name)
+        # Kontrol 1: Admin panelden manuel olarak 'groups.' prefixi girilmişse
+        if raw_full_name.to_s.start_with?('groups.')
+          return I18n.t(raw_full_name)
         end
 
-        # Kontrol 2: Grubun sistem adına göre otomatik eşleşme (groups.grup_adi.display_name)
-        dynamic_key = "groups.#{name}.display_name"
+        # Kontrol 2: Grubun sistem adına (slug) göre otomatik locale eşleşmesi
+        dynamic_key = "groups.#{name}.full_name"
         if I18n.exists?(dynamic_key)
           return I18n.t(dynamic_key)
         end
 
-        # Hiçbir çeviri anahtarı bulunamazsa orijinal çekirdek metoduna pasla
+        # Bulunamazsa Discourse'un orijinal metot/kolon verisini döndür
         super
       end
     end
@@ -41,17 +41,15 @@ after_initialize do
     end
 
     # ====================================================================
-    # 2. SERIALIZER YAMASI: Frontend (EmberJS Payload API) JSON çıktıları için
+    # 2. SERIALIZER YAMASI: Frontend (EmberJS) API JSON çıktıları için
     # ====================================================================
     module ::LocalizedBasicGroupSerializerPatch
-      def display_name
-        # Model yaması çoğu durumu kurtarır fakat serileştirme anındaki
-        # önbellek (cache) yapılarını güvenceye almak için serializer katmanını da mühürlüyoruz.
-        if object.display_name.to_s.start_with?('groups.')
-          return I18n.t(object.display_name)
+      def full_name
+        if object.full_name.to_s.start_with?('groups.')
+          return I18n.t(object.full_name)
         end
 
-        dynamic_key = "groups.#{object.name}.display_name"
+        dynamic_key = "groups.#{object.name}.full_name"
         if I18n.exists?(dynamic_key)
           return I18n.t(dynamic_key)
         end

@@ -1,40 +1,40 @@
 en:
   site_settings:
-    localized_groups_enabled: "Enable multi-language localization for group display names."
+    localized_groups_enabled: "Enable multi-language localization for group names."
   groups:
     AdministrativeStaff:
-      display_name: "Administrative Staff"
+      full_name: "Administrative Staff"
     AssistantProfessor:
-      display_name: "Assistant Professor"
+      full_name: "Assistant Professor"
     AssociateProfessor:
-      display_name: "Associate Professor"
+      full_name: "Associate Professor"
     ADStd:
-      display_name: "Associate Degree Student"
+      full_name: "Associate Degree Student"
     CAO:
-      display_name: "Chief Administrative Officer"
+      full_name: "Chief Administrative Officer"
     Council:
-      display_name: "Council"
+      full_name: "Council"
     EthicsCommittee:
-      display_name: "Ethics Committee"
+      full_name: "Ethics Committee"
     Lecturer:
-      display_name: "Lecturer"
+      full_name: "Lecturer"
     MStd:
-      display_name: "Master's Student"
+      full_name: "Master's Student"
     PhDStd:
-      display_name: "PhD Student"
+      full_name: "PhD Student"
     Professor:
-      display_name: "Professor"
+      full_name: "Professor"
     ResearchAssistant:
-      display_name: "Research Assistant"
+      full_name: "Research Assistant"
     Science:
-      display_name: "Science"
+      full_name: "Science"
     SocialScience:
-      display_name: "Social Science"
+      full_name: "Social Science"
     "SSH-Moderators":
-      display_name: "Social Sciences and Humanities Moderators"
+      full_name: "Social Sciences and Humanities Moderators"
     TechnicalStaff:
-      display_name: "Technical Staff"
+      full_name: "Technical Staff"
     UStd:
-      display_name: "Undergraduate Student"
+      full_name: "Undergraduate Student"
     unauthorized:
-      display_name: "Unauthorized Users"
+      full_name: "Unauthorized Users"

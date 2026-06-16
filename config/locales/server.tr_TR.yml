@@ -1,40 +1,40 @@
 tr_TR:
   site_settings:
-    localized_groups_enabled: "Grup görünen adları için çoklu dil yerelleştirme desteğini etkinleştir."
+    localized_groups_enabled: "Grup isimleri için çoklu dil yerelleştirme desteğini etkinleştir."
   groups:
     AdministrativeStaff:
-      display_name: "İdari Personel"
+      full_name: "İdari Personel"
     AssistantProfessor:
-      display_name: "Doktor Öğretim Üyesi"
+      full_name: "Doktor Öğretim Üyesi"
     AssociateProfessor:
-      display_name: "Doçent"
+      full_name: "Doçent"
     ADStd:
-      display_name: "Ön Lisans Öğrencisi"
+      full_name: "Ön Lisans Öğrencisi"
     CAO:
-      display_name: "Genel Sekreter"
+      full_name: "Genel Sekreter"
     Council:
-      display_name: "Konsey"
+      full_name: "Konsey"
     EthicsCommittee:
-      display_name: "Etik Kurul"
+      full_name: "Etik Kurul"
     Lecturer:
-      display_name: "Öğretim Görevlisi"
+      full_name: "Öğretim Görevlisi"
     MStd:
-      display_name: "Yüksek Lisans Öğrencisi"
+      full_name: "Yüksek Lisans Öğrencisi"
     PhDStd:
-      display_name: "Doktora Öğrencisi"
+      full_name: "Doktora Öğrencisi"
     Professor:
-      display_name: "Profesör"
+      full_name: "Profesör"
     ResearchAssistant:
-      display_name: "Araştırma Görevlisi"
+      full_name: "Araştırma Görevlisi"
     Science:
-      display_name: "Fen Bilimleri"
+      full_name: "Fen Bilimleri"
     SocialScience:
-      display_name: "Sosyal Bilimler"
+      full_name: "Sosyal Bilimler"
     "SSH-Moderators":
-      display_name: "Sosyal ve Beşeri Bilimler Moderatörleri"
+      full_name: "Sosyal ve Beşeri Bilimler Moderatörleri"
     TechnicalStaff:
-      display_name: "Teknik Personel"
+      full_name: "Teknik Personel"
     UStd:
-      display_name: "Lisans Öğrencisi"
+      full_name: "Lisans Öğrencisi"
     unauthorized:
-      display_name: "Yetkisiz Kullanıcılar"
+      full_name: "Yetkisiz Kullanıcılar"
