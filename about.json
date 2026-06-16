@@ -1,0 +1,8 @@
+{
+  "name": "discourse-localized-groups",
+  "version": "1.0.0",
+  "title": "Localized Groups",
+  "description": "Provides multi-language localization support for group display names.",
+  "authors": "Can Bekcan",
+  "url": "https://github.com/canbekcan/discourse-localized-groups"
+}
