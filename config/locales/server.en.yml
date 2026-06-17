@@ -1,11 +1,13 @@
 en:
   site_settings:
-    localized_groups_enabled: "Enable multi-language localization for group names."
+    localized_groups_enabled: "Enable multi-language localization for group names and bios."
   groups:
     AdministrativeStaff:
       full_name: "Administrative Staff"
+      bio: "Full-time administrative staff managing institutional processes. They have **read-only** access."
     AssistantProfessor:
       full_name: "Assistant Professor"
+      bio: "Assistant Professor academic staff working across our faculties."
     AssociateProfessor:
       full_name: "Associate Professor"
     ADStd:
@@ -16,6 +18,7 @@ en:
       full_name: "Council"
     EthicsCommittee:
       full_name: "Ethics Committee"
+      bio: "The official board conducting ethical reviews of institutional publications and academic work."
     Lecturer:
       full_name: "Lecturer"
     MStd:

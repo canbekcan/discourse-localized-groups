@@ -1,21 +1,24 @@
 tr_TR:
   site_settings:
-    localized_groups_enabled: "Grup isimleri için çoklu dil yerelleştirme desteğini etkinleştir."
+    localized_groups_enabled: "Grup isimleri ve açıklamaları için çoklu dil yerelleştirme desteğini etkinleştir."
   groups:
     AdministrativeStaff:
       full_name: "İdari Personel"
+      bio: "Kurumumuzun idari süreçlerini yöneten tam zamanlı çalışan personel grubudur. **Sadece okuma** yetkisine sahiptir."
     AssistantProfessor:
       full_name: "Doktor Öğretim Üyesi"
+      bio: "Fakültelerimizde görev yapan Doktor Öğretim Üyesi akademik kadrosu."
     AssociateProfessor:
       full_name: "Doçent"
     ADStd:
       full_name: "Ön Lisans Öğrencisi"
     CAO:
-      full_name: "İdari İşler Amiri"
+      full_name: "Genel Sekreter"
     Council:
       full_name: "Konsey"
     EthicsCommittee:
       full_name: "Etik Kurul"
+      bio: "Kurum içi yayınların ve akademik çalışmaların etik incelemesini yapan resmi kuruldur."
     Lecturer:
       full_name: "Öğretim Görevlisi"
     MStd:
