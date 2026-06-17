@@ -1,6 +1,6 @@
 # name: discourse-localized-groups
 # about: Multi-language localization support for Discourse Group full names and bios
-# version: 1.0.2
+# version: 1.0.3
 # authors: Can Bekcan
 # url: https://github.com/canbekcan/discourse-localized-groups
 
@@ -38,7 +38,7 @@ after_initialize do
     end
 
     # ====================================================================
-    # 2. BASIC SERIALIZER YAMASI: Frontend listeleri ve kartlar için
+    # 2. BASIC SERIALIZER YAMASI: Frontend listeleri, grup detayları ve bio
     # ====================================================================
     module ::LocalizedBasicGroupSerializerPatch
       def full_name
@@ -53,32 +53,22 @@ after_initialize do
 
         super
       end
-    end
 
-    require_dependency 'basic_group_serializer'
-    class ::BasicGroupSerializer
-      prepend ::LocalizedBasicGroupSerializerPatch
-    end
-
-    # ====================================================================
-    # 3. GROUP SERIALIZER YAMASI: Grup Detay Sayfası (Bio/Hakkında) için
-    # ====================================================================
-    module ::LocalizedGroupSerializerPatch
+      # Grup sayfası 'Hakkında' metni
       def bio_cooked
         dynamic_key = "groups.#{object.name}.bio"
         if I18n.exists?(dynamic_key)
           # YAML dosyasından gelen metni Discourse Markdown motorundan (PrettyText) geçiriyoruz.
-          # Bu sayede YAML içinde **kalın** veya [link](url) gibi Markdown kullanabilirsiniz.
           return PrettyText.cook(I18n.t(dynamic_key))
         end
 
         super
       end
 
+      # Kartlarda veya aramalarda çıkan 300 karakterlik özet
       def bio_excerpt
         dynamic_key = "groups.#{object.name}.bio"
         if I18n.exists?(dynamic_key)
-          # Arama sonuçları vb. yerler için HTML taglerinden arındırılmış 300 karakterlik özet
           return PrettyText.excerpt(PrettyText.cook(I18n.t(dynamic_key)), 300)
         end
 
@@ -86,9 +76,10 @@ after_initialize do
       end
     end
 
-    require_dependency 'group_serializer'
-    class ::GroupSerializer
-      prepend ::LocalizedGroupSerializerPatch
+    # Hem Görünen Ad (full_name) hem de Hakkında (bio) tek bir çekirdek dosyada yamalanıyor
+    require_dependency 'basic_group_serializer'
+    class ::BasicGroupSerializer
+      prepend ::LocalizedBasicGroupSerializerPatch
     end
   end
 end
