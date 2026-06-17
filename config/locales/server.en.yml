@@ -4,40 +4,55 @@ en:
   groups:
     AdministrativeStaff:
       full_name: "Administrative Staff"
-      bio: "Full-time administrative staff managing institutional processes. They have **read-only** access."
+      bio: "Staff members working in the administrative departments (e.g., student affairs, human resources) of universities."
     AssistantProfessor:
       full_name: "Assistant Professor"
-      bio: "Assistant Professor academic staff working across our faculties."
+      bio: "Academics holding the title of **Assistant Professor** at universities."
     AssociateProfessor:
       full_name: "Associate Professor"
+      bio: "Academics holding the title of **Associate Professor** at universities."
     ADStd:
       full_name: "Associate Degree Student"
+      bio: "Students enrolled in two-year associate degree programs at vocational schools."
     CAO:
       full_name: "Chief Administrative Officer"
+      bio: "The **Secretary General** or Chief Administrative Officer who heads the administrative organization of the university."
     Council:
       full_name: "Council"
+      bio: "Representative members serving on the university senate, faculty, or institute councils."
     EthicsCommittee:
       full_name: "Ethics Committee"
-      bio: "The official board conducting ethical reviews of institutional publications and academic work."
+      bio: "Board members responsible for conducting ethical reviews and approvals for scientific research, theses, and publications."
     Lecturer:
       full_name: "Lecturer"
+      bio: "Academics appointed as **Lecturers** to teach in specific areas of expertise at universities."
     MStd:
       full_name: "Master's Student"
+      bio: "Researcher students enrolled in graduate-level **Master's** degree programs (with or without thesis)."
     PhDStd:
       full_name: "PhD Student"
+      bio: "Advanced researcher students enrolled in **Doctoral** (PhD) programs at graduate institutes."
     Professor:
       full_name: "Professor"
+      bio: "Senior faculty members holding the title of **Professor** at universities."
     ResearchAssistant:
       full_name: "Research Assistant"
+      bio: "**Research Assistants** who support academic research, projects, and educational activities at universities."
     Science:
       full_name: "Science"
+      bio: "Academics, researchers, and students working in the fields of Science, Technology, Engineering, and Mathematics (STEM)."
     SocialScience:
       full_name: "Social Science"
+      bio: "Academics, researchers, and students working in the fields of social sciences and humanities."
     "SSH-Moderators":
       full_name: "Social Sciences and Humanities Moderators"
+      bio: "Moderators responsible for managing content, organization, and enforcing academic guidelines within the social sciences and humanities categories."
     TechnicalStaff:
       full_name: "Technical Staff"
+      bio: "Specialized staff working in university laboratories, IT departments, workshops, or other technical units."
     UStd:
       full_name: "Undergraduate Student"
+      bio: "Students enrolled in four-year **Undergraduate** (Bachelor's) degree programs at faculties or colleges."
     unauthorized:
       full_name: "Unauthorized Users"
+      bio: "Registered accounts that have **not yet been verified** via academic (.edu) email or administrative documentation."

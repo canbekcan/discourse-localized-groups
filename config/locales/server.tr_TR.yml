@@ -4,40 +4,55 @@ tr_TR:
   groups:
     AdministrativeStaff:
       full_name: "İdari Personel"
-      bio: "Kurumumuzun idari süreçlerini yöneten tam zamanlı çalışan personel grubudur. **Sadece okuma** yetkisine sahiptir."
+      bio: "Üniversitelerin idari birimlerinde (öğrenci işleri, personel daire başkanlığı vb.) görev yapan personel grubudur."
     AssistantProfessor:
       full_name: "Doktor Öğretim Üyesi"
-      bio: "Fakültelerimizde görev yapan Doktor Öğretim Üyesi akademik kadrosu."
+      bio: "Üniversitelerde **Doktor Öğretim Üyesi** kadrosunda görev yapan akademisyenler."
     AssociateProfessor:
       full_name: "Doçent"
+      bio: "Üniversitelerde **Doçent** unvanı ile görev yapan akademisyenler."
     ADStd:
       full_name: "Ön Lisans Öğrencisi"
+      bio: "Üniversitelerin iki yıllık meslek yüksekokullarında (Ön Lisans) eğitim gören öğrenciler."
     CAO:
       full_name: "Genel Sekreter"
+      bio: "Üniversitelerin idari teşkilatının başı olan ve idari işleyişi yöneten **Genel Sekreter** unvanlı yöneticiler."
     Council:
       full_name: "Konsey"
+      bio: "Üniversite senatosu, fakülte veya enstitü konseylerinde görev alan temsilci üyeler."
     EthicsCommittee:
       full_name: "Etik Kurul"
-      bio: "Kurum içi yayınların ve akademik çalışmaların etik incelemesini yapan resmi kuruldur."
+      bio: "Bilimsel araştırmalar, tezler ve akademik yayınlar için etik inceleme ve onay süreçlerini yürüten kurul üyeleri."
     Lecturer:
       full_name: "Öğretim Görevlisi"
+      bio: "Üniversitelerde belirli uzmanlık alanlarında ders vermek üzere **Öğretim Görevlisi** kadrosunda bulunan akademisyenler."
     MStd:
       full_name: "Yüksek Lisans Öğrencisi"
+      bio: "Enstitülerin tezli veya tezsiz **Yüksek Lisans** (Master) programlarında eğitim alan araştırmacı öğrenciler."
     PhDStd:
       full_name: "Doktora Öğrencisi"
+      bio: "Enstitülerin **Doktora** (PhD) programlarında ileri düzey araştırma ve eğitim yapan öğrenciler."
     Professor:
       full_name: "Profesör"
+      bio: "Üniversitelerde **Profesör** unvanı ile görev yapan kıdemli öğretim üyeleri."
     ResearchAssistant:
       full_name: "Araştırma Görevlisi"
+      bio: "Üniversitelerde akademik araştırma, proje ve eğitim faaliyetlerine destek veren **Araştırma Görevlileri**."
     Science:
       full_name: "Fen Bilimleri"
+      bio: "Fen, teknoloji, mühendislik ve matematik (STEM) alanlarında çalışan akademisyen, araştırmacı ve öğrenciler."
     SocialScience:
       full_name: "Sosyal Bilimler"
+      bio: "Sosyal ve beşeri bilimler alanında çalışan akademisyen, araştırmacı ve öğrenciler."
     "SSH-Moderators":
       full_name: "Sosyal ve Beşeri Bilimler Moderatörleri"
+      bio: "Sosyal ve beşeri bilimler kategorilerinin yönetiminden, içerik düzeninden ve akademik kuralların işleyişinden sorumlu moderatörler."
     TechnicalStaff:
       full_name: "Teknik Personel"
+      bio: "Üniversitelerin laboratuvar, bilişim, atölye veya diğer teknik birimlerinde görev yapan uzman personel."
     UStd:
       full_name: "Lisans Öğrencisi"
+      bio: "Üniversitelerin dört yıllık **Lisans** programlarında (Fakülte/Yüksekokul) eğitim gören öğrenciler."
     unauthorized:
       full_name: "Yetkisiz Kullanıcılar"
+      bio: "Platforma kayıt olmuş ancak henüz akademik (.edu) e-posta veya idari belgelendirme ile **doğrulaması yapılmamış** hesaplar."
